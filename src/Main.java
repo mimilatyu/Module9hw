@@ -13,6 +13,7 @@ public class Main {
         FileOutputStream fos = new FileOutputStream("someText2.txt");
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         fos.write(reader.readLine().getBytes(StandardCharsets.UTF_8));
+        fos.close();
 
 
 
